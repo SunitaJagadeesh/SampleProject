@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-17T17:00:56Z" name="Default suite" finished-at="2020-03-17T17:00:56Z" duration-ms="98">
+    <groups>
+    </groups>
+    <test started-at="2020-03-17T17:00:56Z" name="Default test" finished-at="2020-03-17T17:00:56Z" duration-ms="98">
+      <class name="TestNG.ParametersDemo">
+        <test-method signature="TC_ApplyLeave()[pri:0, instance:TestNG.ParametersDemo@551bdc27]" started-at="2020-03-17T22:30:56Z" name="TC_ApplyLeave" finished-at="2020-03-17T22:30:56Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ApplyLeave -->
+        <test-method signature="TC_CancelLeave()[pri:0, instance:TestNG.ParametersDemo@551bdc27]" started-at="2020-03-17T22:30:56Z" name="TC_CancelLeave" finished-at="2020-03-17T22:30:56Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CancelLeave -->
+        <test-method signature="TC_Login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.ParametersDemo@551bdc27]" started-at="2020-03-17T22:30:56Z" name="TC_Login" finished-at="2020-03-17T22:30:56Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method TC_Login but has not been marked @Optional or defined
+in /private/var/folders/dj/h2njgfds52sf0pgv5tbng1yh0000gn/T/testng-eclipse--770410986/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method TC_Login but has not been marked @Optional or defined
+in /private/var/folders/dj/h2njgfds52sf0pgv5tbng1yh0000gn/T/testng-eclipse--770410986/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:248)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:286)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:547)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:672)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1044)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1134)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Login -->
+      </class> <!-- TestNG.ParametersDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
